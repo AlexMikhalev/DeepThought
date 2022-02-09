@@ -113,6 +113,13 @@
   </a>
   {% endif %}
 
+  {% if social_config.reddit %}
+  <a href="https://www.reddit.com/r/{{ social_config.reddit }}" target="_blank">
+    <span class="icon is-large" title="Medium">
+      <i class="fab fa-reddit fa-lg"></i>
+    </span>
+  </a>
+  {% endif %}
   {% if social_config.googleplay %}
   <a href="https://play.google.com/store/apps/developer?id={{ social_config.googleplay }}&hl=en" target="_blank">
     <span class="icon is-large" title="Google play">
