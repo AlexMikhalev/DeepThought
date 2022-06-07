@@ -112,7 +112,13 @@
     </span>
   </a>
   {% endif %}
-
+  {% if social_config.discord %}
+  <a href="https://discord.gg/{{ social_config.discord}}" target="_blank">
+    <span class="icon is-large" title="Discord">
+      <i class="fab fa-discord fa-lg"></i>
+    </span>
+  </a>
+  {% endif %}
   {% if social_config.reddit %}
   <a href="https://www.reddit.com/r/{{ social_config.reddit }}" target="_blank">
     <span class="icon is-large" title="Medium">
